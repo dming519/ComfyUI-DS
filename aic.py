@@ -7,7 +7,7 @@ class Dify:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "query": ("STRING", {"default": "one girl", "multiline": True}),
+                "query": ("STRING", {"default": "", "multiline": True}),
             }
         }
 
@@ -16,8 +16,8 @@ class Dify:
     FUNCTION = "generate_content"
 
 
-    def generate_content(self, query, user="abc-123",bearer_token="app-TjSUW3IqRus3byugIMEUoBCD"):
-        url = "http://172.16.3.188/v1/workflows/run"
+    def generate_content(self, query, user="",bearer_token=""):
+        url = ""
         payload = {
             "inputs": {"prompt": query},
             "response_mode": "blocking",
