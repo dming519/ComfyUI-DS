@@ -36,7 +36,7 @@ class ApiPost:
         payload = json.loads(body)
         headers = json.loads(headers)
         print(payload)
-        response = requests.post(api_url, json=payload, headers=headers, timeout=20)
+        response = requests.post(api_url, json=payload, headers=headers, timeout=120)
         if response.status_code == 200:
             answer = response.json()[get_response_key]
             return (answer,)
