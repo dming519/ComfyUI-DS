@@ -15,3 +15,4 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "DS_SliceImageList": "DS🦥SliceImageList",
     "DS_ImageListToImage": "DS🦥ImageListToImage",
 }
+
